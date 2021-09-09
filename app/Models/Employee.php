@@ -40,5 +40,4 @@ class Employee extends Model
     {
         return $this->belongsToMany(Department::class, 'department_employees', 'employee_id', 'department_id');
     }
-
 }

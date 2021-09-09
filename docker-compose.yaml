@@ -22,3 +22,11 @@ services:
     ports:
       - 5432:5432
     # Если не нужны порты наружу и/или заняты, можно закомментировать.
+
+  pgadmin:
+    image: dpage/pgadmin4:2021-09-06-2
+    environment:
+      PGADMIN_DEFAULT_EMAIL: test@test.test
+      PGADMIN_DEFAULT_PASSWORD: test
+    ports:
+      - 8081:80

@@ -19,6 +19,8 @@ docker-compose up
 Создаем базу данных
 ```shell
 docker-compose exec db psql -U postgres -c "create database backend;"
+#docker-compose exec db psql -U postgres -c "create user forge with password 'forge';"
+#docker-compose exec db psql -U postgres -c "grant all privileges on database forge to forge;"
 ```
 
 В браузере открываем http://localhost
